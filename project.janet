@@ -1,7 +1,7 @@
 (declare-project
   :name "isjanetthereyet"
   :description ""
-  :dependencies ["https://github.com/joy-framework/joy"]
+  :dependencies ["https://github.com/joy-framework/joy" "https://github.com/andrewchambers/janet-pq"]
   :author ""
   :license ""
   :url ""
