@@ -84,7 +84,7 @@
 (import db)
 (db/connect)
 (let [now (now-utc)
-  current-day (string (now 0) "-" (now 1) "-" (now 1))
+  current-day (string (now 0) "-" (now 1) "-" (now 2))
   count-query (string "select count(*) from stats where day = '" current-day "'")
   cnt (db/val count-query)
   params {:repos (get stats :repos_no) :users (get stats :users_no) :files (get stats :files_no) :current_timestamp (os/mktime (os/date)) :day [1082 false current-day]}]
